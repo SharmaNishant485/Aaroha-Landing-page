@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color:white;
+  background-color:#f8ede3;
   font-family:cursive,Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -16,7 +16,7 @@ header a {
 
 header {
   padding: 0 20px;
-  background-color:pink;
+  background-color:#d0b8a8;
   width: 100%;
   justify-content: space-between;
   position: fixed;
