@@ -1,0 +1,257 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:white;
+  font-family:cursive,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color:pink;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  height: 50px;
+  display: flex;
+}
+
+#navbar-icon1 {
+ margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+#navbar-icon2 {
+ 
+  display: flex;
+  align-items: center;
+}
+#navbar-icon1 img{
+  width:140px;
+}
+#navbar-icon2 img{
+  width:80px;
+}
+
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: black;
+}
+
+ul li {
+  padding: 30px;
+  margin-left: 10px;
+}
+
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  
+} 
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+.open .bar2 {
+  opacity: 0;
+}
+.open .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display:none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  height:300px;
+  width: 25%;
+  background-color:rgb(54, 183, 187);
+  
+}
+.mobile-menu li {
+  margin-bottom:0;
+  line-height: 5px;
+  
+}
+
+@media only screen and (max-width: 740px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    background-color: black;
+  }
+}
+
+.hero-section{
+  /* background-image: url("photo-1.avif"); */
+  /* background-repeat: no-repeat; */
+  /* background-position:center;
+  width:100%;
+  height:500px; */
+  animation:animatePhoto 5s ease-in  infinite normal;
+  margin:auto;
+}
+
+@keyframes animatePhoto {
+  0%{
+    background-image: url("photo-1.jpeg");
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:60%;
+  height:500px;
+}
+50%{
+  background-image: url("photo-2.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:60%;
+  height:500px;
+}
+100%{
+  background-image: url("photo-3.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:60%;
+  height:500px;
+}
+}
+#line1{
+  margin-top:15px;
+  margin-bottom:15px;
+  height: 0.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+h2{
+  display: flex;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  
+  height:500px;
+  margin-left: 20px;
+}
+.content{
+  border: 0.5px solid black;
+  width:50vw;
+  margin:auto;
+}
+.photos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.photos img{
+  width:50vmin;
+  margin-left:30px;
+}
+@media only screen and (max-width: 740px) {
+.container{
+  display: block;
+}
+.content{
+  width: 100%;
+  
+}
+.hero-section{
+  animation:animatedPhoto 5s ease-in  infinite normal;
+}
+@keyframes animatedPhoto {
+  0%{
+    background-image: url("photo-1.jpeg");
+  background-position:center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:500px;
+}
+50%{
+  background-image: url("photo-2.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height:500px;
+}
+100%{
+  background-image: url("photo-3.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height:500px;
+}}
+.photos img{
+  width:100%;
+  margin:15px 0 0;
+  border: 3px solid red;
+}
+
+/* .line1{
+  position:absolute;
+  top:550px;
+}*/
+.logo-container{
+  font-size:16px;
+} 
+ .container{
+  height: 1200px;
+ }
+}
+.logo-container2{
+  display: flex;
+  
+}
+.logo-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:space-evenly;
+  font-size:2rem;
+}
+.logo-container{
+  display: flex;
+}
